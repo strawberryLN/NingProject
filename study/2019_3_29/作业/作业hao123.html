@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hao123网址之家_主页</title>
+    <link rel="icon" href="hao.png">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box1 {
+            width: 100%;
+            height: 27px;
+            background: -webkit-linear-gradient(
+                    top, white, #FCFCFD, #FBFBFC
+            );
+            border-bottom: 1px solid #E8E8E9;
+
+        }
+
+        .date {
+            height: 27px;
+            margin-left: 170px;
+            line-height: 27px;
+            font-size: 12px;
+            float: left;
+        }
+
+        .house {
+            margin-left: 40%;
+            margin-top: 2px;
+            float: left;
+        }
+
+        .set {
+            height: 27px;
+            line-height: 27px;
+            font-size: 12px;
+            float: left;
+            color: #0053A5;
+        }
+
+        .shu {
+            padding-top: 2px;
+            float: left;
+        }
+
+        .mobile {
+            height: 27px;
+            line-height: 27px;
+            font-size: 12px;
+            color: #1EAC1E;
+            float: left;
+
+        }
+
+        .submit {
+            height: 27px;
+            line-height: 27px;
+            font-size: 12px;
+            float: left;
+        }
+
+        .set:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .mobile:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .submit:hover {
+            color: red;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .box2 {
+            width: 828px;
+            height: 84px;
+            margin-left: 170px;
+            float: left;
+
+        }
+
+        .logo {
+            padding-top: 15px;
+            float: left;
+        }
+
+        .weather {
+            padding-top: 17px;
+            margin-left: 14px;
+            float: left;
+        }
+
+        .account {
+            padding-top: 13px;
+            margin-left: 28px;
+            float: left;
+        }
+
+        .list {
+            float: left;
+        }
+
+        .login {
+            padding-left: 28px;
+            float: left;
+        }
+
+        .email {
+            width: 92px;
+            height: 19px;
+            margin-top: 16px;
+            float: left;
+            color: rgba(7, 7, 7, 0.67);
+            background: -webkit-linear-gradient(
+                    top, white, rgba(233, 233, 233, 0.67), rgba(214, 214, 214, 0.67)
+            );
+            font-size: 11px;
+        }
+
+        .button {
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-bottom: 1px;
+            background: -webkit-linear-gradient(
+                    top, white, rgba(233, 233, 233, 0.67), rgba(214, 214, 214, 0.67)
+            );
+            border: 1px solid #A1BCD1;
+            color: rgba(7, 7, 7, 0.67);
+            font-size: 12px;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 70px;
+            padding-top: 14px;
+            padding-left: 1px;
+            float: left;
+        }
+
+        .box4 {
+            width: 760px;
+            height: 72px;
+            background-color: #FAFDF6;
+            border: 1px solid #CBE6BD;
+            margin-left: 170px;
+
+            float: left;
+        }
+
+        .box5 {
+            width: 268px;
+            height: 63px;
+            padding-top: 10px;
+            float: left;
+        }
+
+        .guide {
+            margin-left: 230px;
+            padding-top: 6px;
+        }
+
+        .guide div {
+            width: 50px;
+            height: 24px;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            border-radius: 3px;
+            float: left;
+        }
+
+        .guide div:active {
+            background-color: #1EAC1E;
+            color: white;
+            font-weight: bolder;
+
+        }
+
+        .guide div:hover {
+            cursor: pointer;
+        }
+
+        .more {
+            width: 55px;
+            height: 24px;
+            font-size: 15px;
+            border: 0px;
+            background-color: #FAFDF6;
+        }
+
+        .baidu {
+            margin-left: 110px;
+            margin-top: 2px;
+            float: left;
+        }
+
+        .search {
+            margin-top: 4px;
+            margin-left: 14px;
+            margin-right: 4px;
+            float: left;
+        }
+
+        .baiduyixia {
+            width: 82px;
+            height: 29px;
+            margin-top: 4px;
+            text-align: center;
+            line-height: 30px;
+            background: -webkit-linear-gradient(
+                    top, white, rgba(210, 210, 210, 0.67), rgba(202, 202, 202, 0.67)
+            );
+            border: 1px solid rgba(61, 61, 61, 0.67);
+            font-size: 13px;
+            float: left;
+        }
+
+        .number1 {
+            color: brown;
+            font-size: 13px;
+            font-weight: bolder;
+            padding-left: 5px;
+            float: left;
+        }
+
+        .number2 {
+            color: slategrey;
+            font-size: 13px;
+            font-weight: bolder;
+        }
+
+        .web:hover {
+            background-color: brown;
+            color: white;
+            cursor: pointer;
+        }
+
+        .box6 {
+            width: 100%;
+            height: 500px;
+            margin-top: 10px;
+            background-color: #FAFDF6;
+            border: 1px solid #CBE6BD;
+            float: left;
+
+        }
+
+        .box6_list {
+            width: 100%;
+            clear: left;
+            padding-left: 20px;
+        }
+
+        .box6_list div {
+            width: 50%;
+            margin-top: 15px;
+            float: left;
+            font-size: 15px;
+            font-family: 宋体;
+
+        }
+
+        .box7 {
+            width: 741px;
+            height: 245px;
+            margin-top: 10px;
+            margin-left: 10px;
+            float: left;
+            background-color: #fffdf8;
+            border: 2px solid #61b019;
+
+        }
+
+        .box7_list {
+            width: 100%;
+            clear: left;
+        }
+
+        .box7_list div {
+            width: 10%;
+            text-align: center;
+            margin-top: 14px;
+            padding-right: 30px;
+            float: left;
+            font-size: 16px;
+            font-family: 宋体;
+        }
+
+        .box7_list div:hover {
+            color: red;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .box8 {
+            clear: left;
+            width: 741px;
+            height: 28px;
+            margin-top: 247px;
+            background-color: red;
+        }
+
+        .box8_list div {
+            width: 11%;
+            text-align: center;
+            line-height: 28px;
+            float: left;
+            font-size: 12px;
+            font-family: 宋体;
+            color: blue;
+        }
+
+        .box8_list div:hover {
+            color: red;
+            cursor: pointer;
+        }
+
+        .box9 {
+            width: 741px;
+            height: 500px;
+            margin-top: 28px;
+            margin-left: 10px;
+            background-color: #FAFDF6;
+            border: 2px solid #CBE6BD;
+            float: left;
+        }
+
+        .box9_list1 {
+            width: 45px;
+            height: 170px;
+            background-color: #FAFDF6;
+            float: left;
+
+        }
+
+        .box9_list1 div {
+            color: #098f1f;
+            margin-top: 14px;
+            margin-left: 10px;
+            font-size: 15px;
+            font-family: 宋体;
+            letter-spacing: 2px;
+
+        }
+
+        .box9_list2 {
+            width: 630px;
+            background-color: #FAFDF6;
+            float: left;
+            margin-top: 14px;
+            margin-left: 10px;
+
+        }
+
+        .box9_list2 div {
+            font-size: 14px;
+            font-family: 宋体;
+            padding-left: 45px;
+            float: left;
+
+        }
+
+        .div_bottom {
+            width: 75%;
+            margin-left: 12.5%;
+            height: auto;
+        }
+
+        .div_bottom_left {
+            width: 25%;
+            float: left;
+        }
+
+        .div_bottom_right {
+            width: 75%;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+<div class="box1">
+    <div class="date">2019年3月29日&nbsp;&nbsp;己亥年&nbsp;&nbsp;二月廿三&nbsp;&nbsp;星期五</div>
+    <div class="house">
+        <img src="主页.png" height="21" width="22"/></div>
+    <div class="set">
+        把hao123设置为主页
+    </div>
+    <div class="shu">ㄧ</div>
+    <div class="mobile">
+        手机版
+    </div>
+    <div class="shu">ㄧ</div>
+    <div class="submit">
+        网站提交
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <div class="box2">
+        <div class="logo"><img src="logo.png" height="58" width="162"/></div>
+        <div class="weather">
+            <img src="天气.png" height="52" width="118"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="天气1.png" height="53" width="114"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="天气2.png" height="53" width="119"/>
+        </div>
+        <span class="account">
+            <input type="text" style="width: 90px;border:1px solid #A1BCD1"/>
+        </span>
+        <span class="list">
+            <select class="email" style="border:1px solid #A1BCD1">
+                <option value="sina">@sina.com</option>
+                <option value="yahoo">@yahoo.cn</option>
+                <option value="sohu">@sohu.com</option>
+                <option value="139">@139.com</option>
+            </select>
+        </span>
+        <br><br>
+        <div class="login">
+            <input type="text" style="width: 133px;border:1px solid #A1BCD1"/>
+            <span class="button" style="width: 50px">登录</span>
+        </div>
+    </div>
+    <div class="box3">
+
+        <img src="广告.png" height="61" width="200"/>
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <div class="box4">
+        <div class="guide">
+            <div>网页</div>
+            <div>MP3</div>
+            <div>视频</div>
+            <div>图片</div>
+            <div>贴吧</div>
+            <div>知道</div>
+            <div>新闻</div>
+            <div>地图</div>
+        </div>
+        <span class="list2">
+             <select class="more">
+                <option value="更多">更多</option>
+                <option value="百科">百科</option>
+                <option value="经验">经验</option>
+                <option value="风云榜">风云榜</option>
+            </select>
+        </span>
+        <div class="baidu">
+            <img src="百度.png" height="36" width="106"/></div>
+        <div class="search">
+            <input type="text" style="width:430px;height:25px;box-shadow:0 0 0px rgba(169,169,169,0.67)"/>
+        </div>
+
+        <div class="baiduyixia">
+            百度一下
+        </div>
+    </div>
+</div>
+<div class="box5">
+    <div class="number1">
+        <div class="web">1&nbsp;&nbsp;
+            <span class="webstudy" style="color: black;font-weight: normal">web前端开发培</span>
+        </div>
+        <br>
+        <div class="ui">2&nbsp;&nbsp;<span style="color: black;font-weight: normal">ui设计需要学什</span></div>
+    </div>
+    <div class="number2">
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;<span
+                style="color: black;font-weight: normal">ui设计师是做什</span></div>
+        <br>
+        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;<span
+                style="color: black;font-weight: normal">ui设计网</span></div>
+    </div>
+</div>
+<div style="clear: both"></div>
+
+<!--底部内容-->
+<div class="div_bottom">
+    <div class="div_bottom_left">
+<div class="box6">
+    <div class="box6_list">
+        <div><img src="TV.png" height="21" width="22"/>电视剧</div>
+        <div><img src="game.png" height="20" width="20"/>小游戏</div>
+    </div>
+
+    <div class="box6_list">
+        <div><img src="TV.png" height="21" width="22"/>电影|动漫</div>
+        <div><img src="game.png" height="20" width="20"/>音乐|图片</div>
+    </div>
+
+    <div class="box6_list">
+        <div><img src="TV.png" height="21" width="22"/>新闻|小说</div>
+        <div><img src="game.png" height="20" width="20"/>团购</div>
+    </div>
+
+    <div class="box6_list">
+        <div><img src="TV.png" height="21" width="22"/>彩票</div>
+        <div><img src="game.png" height="20" width="20"/>查询|天气</div>
+    </div>
+</div>
+    </div>
+    <div class="div_bottom_right">
+
+
+        <div class="box7">
+    <div class="box7_list">
+        <div>百&nbsp;度</div>
+        <div>新&nbsp;浪</div>
+        <div>搜&nbsp;狐</div>
+        <div>腾&nbsp;讯</div>
+        <div>网&nbsp;易</div>
+        <div style="letter-spacing: 4px">优酷网</div>
+    </div>
+
+    <div class="box7_list">
+        <div>百&nbsp;度</div>
+        <div>新&nbsp;浪</div>
+        <div>搜&nbsp;狐</div>
+        <div>腾&nbsp;讯</div>
+        <div>网&nbsp;易</div>
+        <div style="letter-spacing: 4px">优酷网</div>
+    </div>
+
+
+    <div class="box7_list">
+        <div>百&nbsp;度</div>
+        <div>新&nbsp;浪</div>
+        <div>搜&nbsp;狐</div>
+        <div>腾&nbsp;讯</div>
+        <div>网&nbsp;易</div>
+        <div style="letter-spacing: 4px">优酷网</div>
+    </div>
+    <div class="box7_list">
+        <div>百&nbsp;度</div>
+        <div>新&nbsp;浪</div>
+        <div>搜&nbsp;狐</div>
+        <div>腾&nbsp;讯</div>
+        <div>网&nbsp;易</div>
+        <div style="letter-spacing: 4px">优酷网</div>
+    </div>
+
+    <div class="box7_list">
+        <div>百&nbsp;度</div>
+        <div>新&nbsp;浪</div>
+        <div>搜&nbsp;狐</div>
+        <div>腾&nbsp;讯</div>
+        <div>网&nbsp;易</div>
+        <div style="letter-spacing: 4px">优酷网</div>
+    </div>
+    <div class="box7_list">
+        <div>百&nbsp;度</div>
+        <div>新&nbsp;浪</div>
+        <div>搜&nbsp;狐</div>
+        <div>腾&nbsp;讯</div>
+        <div>网&nbsp;易</div>
+        <div style="letter-spacing: 4px">优酷网</div>
+    </div>
+    <div class="box7_list">
+        <div>百&nbsp;度</div>
+        <div>新&nbsp;浪</div>
+        <div>搜&nbsp;狐</div>
+        <div>腾&nbsp;讯</div>
+        <div>网&nbsp;易</div>
+        <div style="letter-spacing: 4px">优酷网</div>
+    </div>
+
+</div>
+
+<div class="box8">
+    <div class="box8_list">
+        <div>ui设计要学</div>
+        <div style="width: 10%">ui设计网</div>
+        <div style="width: 14%">ui设计要学多久</div>
+        <div style="width: 13%">ui界面设计</div>
+        <div style="width: 10%">h5页面制作</div>
+        <div style="width: 13%">h5页面设计</div>
+        <div style="width: 14%">ui设计需要学什么</div>
+        <div style="width: 14%">ui视觉设计</div>
+    </div>
+</div>
+
+<div class="box9">
+    <div class="box9_list1">
+        <div>视频</div>
+        <div>游戏</div>
+        <div>新闻</div>
+        <div>购物</div>
+        <div>商城</div>
+    </div>
+    <div class="box9_list2">
+        <div>奇艺高清</div>
+        <div style="padding-left: 25px">优酷网</div>
+        <div style="padding-left: 25px">六间房</div>
+        <div style="padding-left: 25px">搜狐视频</div>
+        <div style="padding-left: 25px">PPTV</div>
+        <div style="padding-left: 25px">迅雷看看</div>
+        <div style="padding-left: 25px">乐视网</div>
+        <div style="padding-left: 25px">腾讯视频</div>
+
+    </div>
+    <div class="box9_list2">
+        <div>荒野行动</div>
+        <div style="padding-left: 25px">地下城与勇士</div>
+        <div style="padding-left: 25px">六间房</div>
+        <div style="padding-left: 25px">搜狐视频</div>
+        <div style="padding-left: 25px">PPTV</div>
+        <div style="padding-left: 25px">迅雷看看</div>
+
+
+    </div>
+    <div class="box9_list2">
+        <div>奇艺高清</div>
+        <div style="padding-left: 25px">优酷网</div>
+        <div style="padding-left: 25px">六间房</div>
+        <div style="padding-left: 25px">搜狐视频</div>
+        <div style="padding-left: 25px">PPTV</div>
+        <div style="padding-left: 25px">迅雷看看</div>
+        <div style="padding-left: 25px">乐视网</div>
+        <div style="padding-left: 25px">腾讯视频</div>
+
+    </div>
+    <div class="box9_list2">
+        <div>奇艺高清</div>
+        <div style="padding-left: 25px">优酷网</div>
+        <div style="padding-left: 25px">六间房</div>
+        <div style="padding-left: 25px">搜狐视频</div>
+        <div style="padding-left: 25px">PPTV</div>
+        <div style="padding-left: 25px">迅雷看看</div>
+        <div style="padding-left: 25px">乐视网</div>
+        <div style="padding-left: 25px">腾讯视频</div>
+
+    </div>
+    <div class="box9_list2">
+        <div>奇艺高清</div>
+        <div style="padding-left: 25px">优酷网</div>
+        <div style="padding-left: 25px">六间房</div>
+        <div style="padding-left: 25px">搜狐视频</div>
+        <div style="padding-left: 25px">PPTV</div>
+        <div style="padding-left: 25px">迅雷看看</div>
+        <div style="padding-left: 25px">乐视网</div>
+        <div style="padding-left: 25px">腾讯视频</div>
+
+    </div>
+
+</div>
+
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>

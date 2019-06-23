@@ -1,0 +1,54 @@
+1、CSS设置div背景色为渐变色：
+背景颜色渐变就用到-webkit-linear-gradient,
+在-webkit-linear-gradient里面写top，设定渐变从顶部开始，到底部结束。在这里需要注意的是，
+写了top就不要写bottom了
+background:-webkit-linear-gradient(
+    top,white,#FCFCFD,#FBFBFC
+    );
+
+2、Pycharm如何自动换行
+只对当前文件有效的操作是菜单栏->View -> Active Editor -> Use Soft Wraps。 要是想对所有文件都起到效果，
+要在setting里面进行操作。Perferences-Editor-General -> Use soft wraps in console。
+
+3、html制作下拉菜单
+select标签中的option属性用于定义列表中的可用选项。
+
+4、使用div标签，左浮动后，下一个div不可换行。
+此时可以将div改为span标签，加<br>换行。
+
+
+
+
+CSS
+1、<!DOCTYPE html>声明文档为html
+声明编码 <meta charset="UTF-8">
+2、meta标签
+2.1、关键词<meta name="keywords" content="知识，百科，女神"/>
+2.2、描述内容<meta name="description" content="免费，百科，女神"/>
+2.3、定义作者<meta name="author" content="宝宝"/>
+2.4、每30秒刷新当前页面<meta http-equiv="refresh" content="30"/>
+2.5、<img src="作业/logo.png" title="这是我老公"/>
+加title鼠标滑过对图片作描述
+
+3、自定义列表
+<dl>
+<dt>Coffee</dt>
+<dd>- black hot drink</dd>
+<dt>Milk</dt>
+<dd>- white cold drink</dd>
+<dl>
+浏览器显示如下：
+
+Coffee
+- black hot drink
+Milk
+- white cold drink
+
+4、iframe 画中画
+<iframe src="demo_iframe.htm"（src里添加画中的网址或CSS链接）></iframe>
+
+Iframe - 移除边框
+frameborder 属性用于定义iframe表示是否显示边框。
+
+设置属性值为 "0" 移除iframe的边框:
+<iframe src="demo_iframe.htm" frameborder="0"></iframe>

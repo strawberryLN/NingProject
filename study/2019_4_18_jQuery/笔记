@@ -1,0 +1,87 @@
+一、jQuery效果
+1、jQuery文档就绪事件
+$(document).ready(function(){
+}
+
+2、安装：
+百度 CDN:
+<head>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+</script>
+</head>
+
+3、dblclick()
+当双击元素时，会发生 dblclick 事件。
+
+实例
+$("p").dblclick(function(){
+  $(this).hide();
+});
+
+4、jQuery fadeIn() 用于淡入已隐藏的元素。可控制速度"slow" 或 数值3000;
+$("button").click(function(){
+  $("#div1").fadeIn();
+  $("#div2").fadeIn("slow");
+  $("#div3").fadeIn(3000);
+});
+
+jQuery fadeOut() 方法用于淡出可见元素。
+$("button").click(function(){
+  $("#div1").fadeOut();
+  $("#div2").fadeOut("slow");
+  $("#div3").fadeOut(3000);
+});
+
+jQuery fadeToggle() 方法可以在 fadeIn() 与 fadeOut() 方法之间进行切换。
+
+5、jQuery slideDown() 方法用于向下滑动元素。
+jQuery slideUp() 方法用于向上滑动元素。
+jQuery slideToggle() 方法可以在 slideDown() 与 slideUp() 方法之间进行切换。
+
+6、jQuery animate() 方法用于创建自定义动画。
+
+$("button").click(function(){
+  $("div").animate({
+    left:'250px',
+    opacity:'0.5',
+    height:'150px',
+    width:'150px'
+  });
+});
+当使用 animate() 时，必须使用 Camel 标记法书写所有的属性名，比如，必须使用 paddingLeft 而不是 padding-left，使用 marginRight 而不是 margin-right，等等。
+
+7、jQuery stop() 方法用于停止动画或效果，在它们完成之前。只停止当前正在进行的动画，停止当前动画后，队列中的下一个动画开始进行：
+
+
+可以在 stop() 中设置 stopAll 的参数为 true，这样就可以停止所有动画效果而不是只停止当前动画：
+
+
+8、Callback 函数在当前动画 100% 完成之后执行。
+例：$("button").click(function(){
+  $("p").hide("slow",function(){
+    alert("段落现在被隐藏了");
+  });
+});
+
+9、jQuery - 链(Chaining)
+jQuery 方法链接
+$("#p1").css("color","red").slideUp(2000).slideDown(2000);
+
+二、jQuery html
+1、获得内容 - text()、html() 以及 val()
+
+text() - 设置或返回所选元素的文本内容
+html() - 设置或返回所选元素的内容（包括 HTML 标记）
+val() - 设置或返回表单字段的值
+Query attr() 方法用于获取属性值。
+
+下面的例子演示如何获得链接中 href 属性的值：
+
+实例
+$("button").click(function(){
+  alert($("#runoob").attr("href"));
+});
+
+2、jQuery - 添加元素
+jQuery append() 方法在被选元素的结尾插入内容（仍然该元素的内部）。
+jQuery prepend() 方法在被选元素的开头插入内容。

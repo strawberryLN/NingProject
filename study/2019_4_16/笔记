@@ -1,0 +1,10 @@
+1、将时间戳格式化
+
+var unixTimestamp = new Date( 1477386005*1000 ) ;
+commonTime = unixTimestamp.toLocaleString();
+ alert(commonTime);
+
+自定义格式化的时间格式：在后面加以下内容
+Date.prototype.toLocaleString = function() {
+ return this.getFullYear() + "年" + (this.getMonth() + 1) + "月" + this.getDate() + "日 " + this.getHours() + "点" + this.getMinutes() + "分" + this.getSeconds() + "秒";
+    };

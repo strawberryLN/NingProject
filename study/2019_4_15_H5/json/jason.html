@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+
+    <script>
+        var http;
+        if (window.XMLHttpRequest) {
+            http = new XMLHttpRequest();
+        } else {
+            http = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        http.open("GET", "wx_20180802001.txt", true);
+        http.send();
+
+        http.onreadystatechange = function () {
+            if (http.readyState == 4 && http.status == 200) {
+                var text = http.responseText;
+                var json = JSON.parse(text);
+                var title = json.title;
+                var author = json.author;
+                var time = json.time;
+
+                document.getElementsByClassName("div_h3")[0].innerHTML = title;
+
+                document.getElementsByClassName("div_author")[0].innerHTML = time + "<span style='color: #0e70c0;margin-left: 20px;'>" + author + "</span>";
+
+                var divContent = document.getElementsByClassName("div_content")[0];
+
+                var desc = json.desc;
+                for (var i = 0; i < desc.length; i++) {
+                    var divNode = document.createElement("div");
+                    var abner = desc[i].abner;
+                    var isimage = desc[i].isimage;
+                    var image = desc[i].image;
+
+                    var color = desc[i].color;
+                    var size = desc[i].size;
+                    var weight = desc[i].weight;
+
+                    if (isimage) {//是图片
+                        var imgNode = document.createElement("img");
+                        imgNode.setAttribute("src", image);
+                        divNode.appendChild(imgNode);
+                    } else {
+                        var pNode = document.createElement("p");
+                        pNode.innerHTML = "<span style='color:" + color + ";font-weight: " + weight + ";font-size: " + size + " '>" + abner + "</span>";
+
+                        divNode.appendChild(pNode);
+                    }
+
+
+                    divContent.append(divNode);
+                }
+
+
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+<div class="div_all">
+    <div style="width: 100%;height: 50px;text-align: center;">
+        <h3 class="div_h3"></h3>
+    </div>
+    <div class="div_author">
+
+    </div>
+
+    <div class="div_content">
+
+    </div>
+</div>
+
+
+</body>
+</html>

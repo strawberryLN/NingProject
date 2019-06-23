@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+</head>
+<script>
+ function register() {
+     var account=document.getElementsByTagName("input")[0];
+     alert(account.value);
+     var pass=document.getElementsByTagName("input")[1];
+     alert(pass.value);
+     var goodat=document.getElementsByName("good_at");
+     for (var i = 0; i <goodat.length ; i++) {
+         if (goodat[i].checked) {
+             alert(goodat[i].value);
+         }
+     }
+     var hobby=document.getElementsByClassName("hobby");
+     var love=new Array();
+     for (var j = 0; j < hobby.length; j++) {
+         if (hobby[j].checked) {
+             love[j]=hobby[j].value;
+         }
+     }alert(love);
+     var personal=document.getElementsByTagName("textarea")[0];
+     alert(personal.value);
+ }
+
+</script>
+<body>
+账号：<input type="text" placeholder="请输入账号"/><br/>
+密码：<input type="password" placeholder="请输入密码"/><br/>
+擅长：<br/>
+<input type="radio" name="good_at" value="Java"/>Java&nbsp;
+<input type="radio" name="good_at" value="Android" checked/>Android&nbsp;
+<input type="radio" name="good_at" value="Ios"/>Ios&nbsp;
+<br/>
+喜好：<br/>
+<input type="checkbox" class="hobby" value="画画"/>画画&nbsp;
+<input type="checkbox" class="hobby" value="唱歌"/>唱歌&nbsp;
+<input type="checkbox" class="hobby" value="学习"/>学习&nbsp;
+<br/>
+个人描述：<br/>
+<textarea style="width: 220px;height: 100px"></textarea>
+<br/><br/>
+<button onclick="register()">注册</button>
+
+</body>
+</html>

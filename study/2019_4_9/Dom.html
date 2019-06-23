@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body onload="loadBody()" onunload="unLoad()">
+<button onclick="click1()">点击1</button>
+<button class="click2">点击2</button>
+<button class="click3">点击3_内部</button>
+<button class="click4">点击3_外部</button>
+<a href="http://www.baidu.com" target="_self">跳至百度</a>
+<br/>
+<input type="text" onmousemove="inputFocus()" onmouseout="clearInput()" onmousedown="inputFocus()"/><br/>
+<span class="span">我是可以改变的哦</span>
+</body>
+<script>
+
+    function clearInput() {
+        document.getElementsByClassName("span")[0].style.color = "#222222";
+    }
+
+    function inputFocus() {
+        document.getElementsByClassName("span")[0].style.color = "#d43c3c";
+    }
+
+    function unLoad() {
+        console.log("----");
+    }
+
+    function loadBody() {
+        alert("我一进来就会被调用");
+    }
+
+    function click1() {
+        alert("点击1");
+    }
+
+    var btn = document.getElementsByClassName("click2")[0];
+    btn.onclick = function () {
+        alert("点击2");
+    };
+
+    document.getElementsByClassName("click3")[0].addEventListener("click", function () {
+        alert("点击3_内部");
+    });
+
+    function click4() {
+        alert("点击3_外部");
+    }
+
+    document.getElementsByClassName("click4")[0].addEventListener("click", click4);
+
+
+</script>
+</html>

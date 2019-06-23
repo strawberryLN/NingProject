@@ -1,0 +1,4 @@
+1、调整字符间距
+ letter-spacing: 2px;
+2、清除左浮动（换行）
+CSS样式里加clear: left;

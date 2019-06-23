@@ -1,0 +1,68 @@
+1、input输入框长度调节
+<input type="password" style="width: 100px"/>
+给input框设置style="width: 100px"属性
+
+2、清除浮动：
+前面DIV设置浮动float后，后面的DIV或其他元素如何强制换行？（此方法可调整边距）
+
+情境：主页包含两个Echarts图表和一个基于bootstrapTable组件的公告栏，要求两个图表同行显示，公告栏换行显示。
+
+示例：
+
+<div style="float:left;">DIV1-Echarts环形图</div>
+<div style="float:left;">DIV2-Echarts柱状图</div>
+<div>公告栏</div>
+
+因为div加了float属性后，后续的元素也会跟着float显示，除非浏览器宽度不够换行，这里我要进行强制换行
+
+解决：（在两个容器之间加一个style="clear:both"的div）
+
+<div style="float:left;">DIV1-Echarts环形图</div>
+<div style="float:left;">DIV2-Echarts柱状图</div>
+<div style="clear:both"></div>
+<div>公告栏</div>
+---------------------
+
+3、去掉网页的边距
+ body{
+            margin: 0px;
+            padding: 0px;
+        }
+
+4、给div加边框
+方法一：<div style="border:1px solid red;"></div>
+方法二：在head<style>里加border:1px solid blue;
+只显示下边框：（border-bottom）
+<div style="border-bottom:1px solid red;"></div>
+
+
+今天存在的问题：
+1、代码没有标准化
+
+
+如何添加样式
+
+1、标签内添加
+<p style="color: red;font-size: 12px;">我爱我老公</p>
+
+2、头部添加  type="text/css"  可有可无
+   <style type="text/css">
+
+    </style>
+3、外链添加
+<link rel="stylesheet" href="css_0328.css"/>
+外部链接只能输入标签选择器、class选择器、id选择器
+
+设置圆角：
+border-radius: 10px;
+只设置上半部分为圆角：
+ border-top-left-radius: 10px ;
+ border-top-right-radius: 10px ;
+
+绘制圆
+.yuan{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 100px;
+}

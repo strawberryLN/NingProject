@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <style>
+        .chuangkou{
+            width: 200px;
+            height: 300px;
+            border: 1px dotted rosybrown;
+overflow-y: auto;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+        .div button{
+            margin-left: 5px;
+        }
+
+    </style>
+    <script>
+  /*var ZhangJiaNing={
+      name:"张佳宁",
+      age:"16",
+      husband:"李大猪",
+      getName:function () {
+          return this.name
+      },
+      setName:function (name) {
+          this.name=name;
+      }
+
+  }
+  ZhangJiaNing.setName("李晓明");
+  alert(ZhangJiaNing.getName());*/
+
+  var isClick=true;
+  function big() {
+      var name=document.getElementsByClassName("chuangkou")[0];
+      if (isClick){
+           name.style.fontSize="20px";
+           isClick=false;
+      }else {
+          name.style.fontSize="15px";
+          isClick=true;
+      }
+  }
+
+  function small() {
+      var name=document.getElementsByClassName("chuangkou")[0];
+      if(isClick){
+          name.style.fontSize="10px";
+          isClick=false;
+      }else {
+           name.style.fontSize="15px";
+           isClick=true;
+      }
+  }
+
+  function kuan() {
+      var name=document.getElementsByClassName("chuangkou")[0];
+      if (isClick){
+          name.style.width="500px";
+          isClick=false;
+      } else {
+          name.style.width="200px";
+          isClick=true;
+      }
+
+  }
+
+
+</script>
+
+</head>
+<body>
+<div class="div_button">
+    <button onclick="big()">变大</button><button onclick="small()">变小</button><button onclick="kuan()">变宽</button>
+</div>
+<div class="chuangkou">
+    李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个
+    大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明
+    是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪
+    李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个
+    大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明
+    是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪李晓明是个大猪
+</div>
+</body>
+
+
+
+
+</html>

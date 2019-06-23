@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div_all {
+            margin: 100px;
+        }
+
+        .div_all span {
+            padding: 10px;
+            border: 1px solid salmon;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .div_input {
+            width: 200px;
+            height: 50px;
+            border: 1px solid salmon;
+            overflow: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="div_all">
+    <div class="div_input">
+
+    </div>
+    <br/><br/><br/>
+    <span onclick="number()">1</span><span onclick="number()">2</span><span onclick="number()">3</span><span>+</span>
+    <br/><br/><br/>
+    <span>4</span><span>5</span><span>6</span><span>-</span>
+    <br/><br/><br/>
+    <span>7</span><span>8</span><span>9</span><span>*</span>
+    <br/><br/><br/>
+    <span>=</span>
+</div>
+
+</body>
+<script>
+    // var y=Math.sqrt(25);
+    //
+    // alert(parseInt(Math.random()*10));
+
+
+
+    var nodeSpan = document.getElementsByTagName("span");
+    for (var i = 0; i <nodeSpan.length ; i++) {
+     document.write(nodeSpan[i].innerHTML);
+
+    }
+
+
+    // var html_1, html_2, html_3, html;
+    //
+    // //1
+    // nodeSpan[0].onclick = function () {
+    //     html_1 = nodeSpan[0].innerHTML;
+    //     setText(html_1);
+    //
+    // };
+    //
+    // //2
+    // nodeSpan[1].onclick = function () {
+    //     html_2 = nodeSpan[1].innerHTML;
+    //     setText(html_2);
+    // };
+    //
+    // //3
+    // nodeSpan[2].onclick = function () {
+    //     html_3 = nodeSpan[2].innerHTML;
+    //     setText(html_3);
+    // };
+    // //+
+    // nodeSpan[3].onclick = function () {
+    //     html = nodeSpan[3].innerHTML;
+    //      setText(html);
+    //
+    // };
+    //
+    // function setText(text) {
+    //     var dom = document.getElementsByClassName("div_input")[0];
+    //     dom.innerText = dom.innerText + text+"";
+    // }
+    //
+    //
+    // nodeSpan[12].onclick = function () {
+    //     if (html == "+") {
+    //         alert(parseInt(html_1) + parseInt(html_2));
+    //     }
+    //
+    //
+    // };
+
+</script>
+</html>

@@ -1,0 +1,314 @@
+{
+  "title": "小程序如何运营 这里有4条最可行的出路",
+  "author": "微信平台",
+  "time": "2018年8月2日",
+  "link": "http://www.96weixin.com/weixinpingtai/28085.html",
+  "desc": [
+    {
+      "abner": "小程序说到底，是微信为了实现其占领线下场景宏图伟略的一步大棋，建议从连接线上线下的角度入手去思考创业模式，不要触及微信的底线。",
+      "image": "",
+      "imgheight": "200px",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false
+    },
+    {
+      "abner": "",
+      "image": "http://www.96weixin.com/upload/20180730/1532941809489194.png",
+      "imgheight": "200px",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": true
+    },
+    {
+      "abner": "跟随微信的初衷，把小程序做成一款连接器，让它连接线上用户和你的线下用户池，或者利用它的人与人连接的社交属性，使你的品牌获得传播。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "一、先看清楚生态圈",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "是社交工具，但本质是连接器",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "小程序必须基于微信生态圈搭建，我们首先要理解微信的生态圈。微信的基础是一个即时社交工具，但是由于后来功能的不断强大，它被赋予了新的定义——连接器。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "微信是一个连接器，即时聊天工具连接人和人，扫一扫和地理位置连接线上和线下，微信支付、订阅号等产品则创造了更多的连接。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "微信的克制",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "微信团队从一开始发布小程序就显得十分克制，从不支持模糊搜索到今日可以搜索关键字与描述，它们用了足足一年。更甚者，时至今日，我们依然无法从朋友圈进入小程序。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "微信的克制让纯线上小程序创业者变得寸步难行，主要是因为小程序“用完即走”的初衷，“用完即走”导致了创业者需要把付费转化前置，否则根本无法盈利。但是过分前置用户付费流程又十分影响产品体验，这又与互联网思维相违背。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "没有线上用户池",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "小程序的初衷“用完即走”使得创业者无法在小程序内累积用户，由于“用完即走”，小程序的推送消息推送功能与服务号一样严格，只有在用户有相关操作后，才能推送模板消息，无法触达老用户，对于那要求高复购频率的产品则是巨大的挑战。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "二、可以尝试的切入",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "连接线下的赋能",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "我把连接线下的赋能放在首位，这就恰恰跟微信作为“连接器”的定位相匹配了，如果这样做的话，微信会最开心，创业者就是为微信成为宇宙中心而添砖加瓦。什么是连接线下的赋能呢?假如我开了一家酒店，我要管理我的常旅客，建立自己的会员体系，但是我没有能力开发APP和相关系统。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "那么这个时候，小程序就能派上用场了。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "工具",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "做工具类小程序与工具类APP一样，变现周期长。如果单从用户体验的角度来说，微信小程序里面的工具比起其APP的用户体验好得多，没有很多的广告和外链，就是最纯净的小程序。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "当然，机会还是有的，把小工具的一些核心功能放到小程序，附件功能依旧放在APP，把小程序当做引流工具，小程序也有效弥补了APP本身社交属性不够的短板。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "带有社交属性的APP，尤其是游戏和电商",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "去年，第一批微信小程序的开发者正式发布他们的小程序。里面的小程序，几乎都是清一色的原APP简化版。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "但是，当这些小程序涉足到社交场景时，它的曝光量就会变得相当可观，还能够为APP导流产生作用。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "春节期间，我们几乎都被帮抢火车票的小程序刷了屏，“帮抢”这个机制很好地融入了社交的元素，使得原APP能够在微信中得以传播并且导流。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "而为什么是游戏和电商?因为小程序没有老用户池，而且入口深，为用户的重复使用带来了重重困难，但游戏和电商自身都具有变现的能力，所以特别适合在加入到小程序当中。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "其中，靠着社交属性，拼多多就通过微信做起来了。强社交相关的小程序可以低成本、最大化地抓取微信流量，爆发力最强，结合游戏和电商自身具有的变现能力，又能很好地实现产品变现。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "低频、标品、垂直的电商",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "对于低频、标品、垂直的电商产品，我认为使用小程序是很合适的入口，因为其所销售的产品本身并不需要长时间的挑选，真正符合用完即走的理念。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "最后说说",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "小程序说到底，是微信为了实现其占领线下场景宏图伟略的一步大棋，建议从连接线上线下的角度入手去思考创业模式，不要触及微信的底线，在没有做大的时，顺着微信的思路去做。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "做To C的，在目前阶段，纯线上的把小程序当做引流工具，能结合线下的结合线下是大势所趋;而做To B的，则应该思考如何通过小程序赋能线下商户。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "未来，我们携手一起探索。",
+      "image": "",
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "isimage": false,
+      "imgheight": "200px"
+    },
+    {
+      "abner": "原文地址：http://www.96weixin.com/weixinpingtai/28085.html",
+      "image": "",
+      "isimage": false,
+      "color": "#d43c3c",
+      "size": "14px",
+      "weight": "bold",
+      "imgheight": "200px"
+    },
+    {
+      "abner": "\n",
+      "image": "",
+      "isimage": false,
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "imgheight": "200px"
+    },
+    {
+      "abner": "",
+      "image": "https://code.aliyun.com/598254259/AndroidGuide/raw/master/image/small_wx.png",
+      "isimage": true,
+      "color": "#333030",
+      "size": "14px",
+      "weight": "normal",
+      "imgheight": "150px"
+    }
+  ]
+}

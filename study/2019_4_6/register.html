@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <script>
+        //注册
+        function register() {
+            // var userName=document.getElementsByClassName("user_name")[0];
+            // var name=userName.value;
+            // alert(name);
+
+            var userName = document.getElementsByTagName("input")[0];
+            var name = userName.value;
+           console.log(name);
+
+            var userPass = document.getElementsByTagName("input")[1];
+            var pass = userPass.value;
+           console.log(pass);
+
+            // var userGood_at=document.getElementsByTagName("input")[2];
+            // var good_at=userGood_at.value;
+            //
+            // if(userGood_at.checked){
+            //       alert(good_at);
+            // }
+
+            var radioNode = document.getElementsByName("muma");
+
+            var radioV;
+            for (var i = 0; i < radioNode.length; i++) {
+                var node = radioNode[i];
+                if (node.checked) {
+                    radioV = node.value;
+                }
+            }
+
+            console.log(radioV);
+
+
+            // var userInterest = document.getElementsByClassName("interest")[0];
+            // var interest = userInterest.value;
+
+
+
+            var uerhobby = document.getElementsByName("haha");
+            var hobby=new Array();
+            for (var i = 0; i < uerhobby.length; i++) {
+                if (uerhobby[i].checked) {
+                    hobby[i]=uerhobby[i].value;
+                }
+
+            }
+
+             console.log(hobby);
+            var userDescribe = document.getElementsByTagName("textarea")[0];
+            var describe = userDescribe.value;
+             console.log(describe);
+        }
+
+
+
+    </script>
+</head>
+
+
+<body>
+
+
+<div>
+    账号：<input type="text" placeholder="请输入账号" class="user_name"/><br/>
+    密码：<input type="text" placeholder="请输入密码" class="user_pass"/><br/>
+    擅长：<br/>
+    <div class="good_at">
+        <input type="radio" name="muma" value="Java"/>Java&nbsp;<input type="radio" name="muma" value="Android"
+                                                                       checked="checked"/>Android&nbsp;<input
+            type="radio" name="muma" value="Ios"/>Ios
+    </div>
+
+    爱好： <br/>
+    <div class="hobby">
+        <input type="checkbox" name="haha" value="画画"/>画画&nbsp;<input type="checkbox" name="haha" value="唱歌"/>唱歌&nbsp;<input type="checkbox" name="haha" value="学习"/>学习
+    </div>
+    个人描述：<br/>
+    <textarea style="width: 215px;height:120px"></textarea>
+    <br/><br/>
+    <button onclick="register()">注册</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+   <!---->
+//    var a = "我爱老婆";
+//    alert(a.charAt(1));//获取指定位置的字符
+//
+//  var a = "我爱老婆";
+//    alert(a.length);//返回指定长度
+
+      var a = "我爱老爱婆";
+    alert(a.split("爱"));//切割
+
+   /* var a = "我爱老爱婆";
+    alert(a.indexOf("爱"));获取字符出现的第一个位置
+
+    var a = "我爱老婆";
+    var b=a.replace("老婆","宝宝");
+    alert(b);  replace是替换某个内容
+
+    var a = "我爱老婆";
+    alert(a.substring(0,2));//获取指定长度的字符，包左不包右，打印（我爱）
+
+    var a=0;
+    a++;//a=a+1
+
+    alert(a);
+
+
+
+    var d = new Date().getDay();
+    switch (d) {
+        case 0:
+            x = "今天是星期日";
+            break;
+        case 1:
+            x = "今天是星期一";
+            break;
+        case 2:
+            x = "今天是星期二";
+            break;
+        case 3:
+            x = "今天是星期三";
+            break;
+        case 4:
+            x = "今天是星期四";
+            break;
+        case 5:
+            x = "今天是星期五";
+            break;
+        case 6:
+            x = "今天是星期六";
+            break;
+    }
+
+    alert(x);
+
+      //遍历数组
+    var arr=[2,4,6,8,9,10,15,66,23,21,6];
+    for (var a=0;a<arr.length;a++){
+        //alert(arr[a])
+        console.log(arr[a]);
+    }
+
+     //遍历100以内的数字
+
+   for (var a=0;a<=100;a++){
+       console.log(a);
+   }
+
+     for (var b=0;b<=100;b++){
+        if (b%2==0) {
+              console.log(b);
+        }
+    }
+    for (var n=0;n<=100;n++){
+        if (n%3==0){
+            console.log(n);
+        }
+    }
+
+       for (var b=0;b<=100;b+=3){
+       console.log(b);
+    }
+
+        var str = "abcdefghijklmnopqrstuvwxyz";
+
+    console.log(str);
+
+     // for (var i = 0; i < str.length; i++) {
+    //     console.log(str.charAt(i));
+    // }
+
+
+     document.write("<table>");
+    for (var i = 1; i <= 9; i++) {
+          document.write("<tr>");
+        for (var j = 1; j <= i; j++) {
+            //console.log(j+"*"+i+"="+j*i);
+            var str=j+"*"+i+"="+j*i;
+              document.write("<td style='width: 100px;'>"+str+"</td>");
+        }
+          document.write("</tr>");
+    }
+    document.write("</table>");
+
+
+    明天作业：
+    两种方式打印九九乘法表
+    打印金字塔
+    打印到金字塔
+    打印矩形
+    * */
+
+    for (var i = 0; i < 10; i++) {
+        for (var j = 0; j <10 ; j++) {
+            document.write("<span>*</span>");
+        }
+        document.write("<br/>");
+    }
+
+
+</script>
+<body>
+
+
+</body>
+</html>

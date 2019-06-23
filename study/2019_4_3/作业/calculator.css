@@ -1,0 +1,50 @@
+.div_all {
+    width: 30%;
+    height: 590px;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 35%;
+    border-radius: 20px;
+}
+
+.button {
+    width: 400px;
+    height: 200px;
+}
+
+.list,.list2 {
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    list-style: none;
+    float: left;
+    width: 70px;
+    height: 72px;
+    margin: 9px;
+    margin-left: 21px;
+    border-radius: 50px;
+    background: #eee;
+    cursor: pointer;
+    text-align: center;
+    line-height: 72px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.list2 li {
+    list-style: none;
+    float: left;
+    width: 70px;
+    height: 72px;
+    margin: 9px;
+margin-left: 21px;
+    border-radius: 50px;
+    background: #494648;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    line-height: 72px;
+    font-weight: bold;
+    font-size: 25px;
+}

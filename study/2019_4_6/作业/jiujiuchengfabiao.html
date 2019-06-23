@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>久久乘法表</title>
+    <script>
+
+        for (var i = 1; i <= 9; i++) {
+            for (var j = 1; j <= i; j++) {
+                var str = j + "*" + i + "=" + j * i;
+                document.write("<span style='margin-right: 40px'>" + str + "</span>");
+            }
+            document.write("<br/>");
+        }
+        document.write("<br><br><br>");
+        document.write("<table>");
+        for (var i = 1; i <= 9; i++) {
+            document.write("<tr>");
+            for (var j = 1; j <= i; j++) {
+                var str = j + "*" + i + "=" + j * i;
+                document.write("<td style='width:80px'>" + str + "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+        document.write("<br><br><br>");
+
+        for (var i = 0; i < 6; i++) {
+            for (var j = 0; j < 30; j++) {
+                var str = "*";
+                document.write("<span>" + str + "</span>");
+            }
+            document.write("<br/>");
+        }
+
+        for (var i = 0; i < 10; i++) {
+
+            for (var z = 0; z < i; z++) {
+                document.write("<span>&nbsp;</span>");
+            }
+            for (var j = 10; j > i; j--) {
+                var str = "*";
+                document.write("<span>&nbsp;" + str + "</span>");
+            }
+
+            document.write("<br/>");
+        }
+
+        var date = new Date().getDay();
+        switch (date) {
+            case 0:
+                alert("今天是星期日");
+                break;
+            case 1:
+                alert("今天是星期一");
+                break;
+            case 2:
+                alert("今天是星期二");
+                break;
+            case 3:
+                alert("今天是星期三");
+                break;
+            case 4:
+                alert("今天是星期四");
+                break;
+            case 5:
+                alert("今天是星期五");
+                break;
+            case 6:
+                alert("今天是星期六");
+                break;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

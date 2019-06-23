@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .div_all {
+            margin-left: 30px;
+        }
+
+        .div_node {
+            width: 100%;
+            clear: left;
+        }
+
+        .node_left {
+            color: red;
+            float: left;
+        }
+
+        .div_right {
+            margin-left: 30px;
+            float: left;
+        }
+
+    </style>
+    <script>
+        var http;
+        if (window.XMLHttpRequest) {
+            http = new XMLHttpRequest();
+        } else {
+            http = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        http.open("GET", "xin.txt", true);
+        http.send();
+
+        http.onreadystatechange = function () {
+            if (http.readyState == 4 && http.status == 200) {
+                var text = http.responseText;
+                var json = JSON.parse(text);
+                var res = json.result;
+                var data = res.data;
+                for (var i = 0; i < data.length; i++) {
+                    var div_all = document.getElementsByClassName("div_all")[0];
+                    var intime = data[i].intime;
+                    var intro = data[i].intro;
+
+                    var unixTimestamp = new Date(intime * 1000);
+                    commonTime = unixTimestamp.toLocaleString();
+                    Date.prototype.toLocaleString = function () {
+                        return this.getFullYear() + "/" + (this.getMonth() + 1) + "/" + this.getDate() + "/ " + this.getHours() + ":" + this.getMinutes() + ":" + this.getSeconds();
+                    };
+
+                    var div_node = document.createElement("div");
+                    div_node.setAttribute("class", "div_node");
+                    var div_left = document.createElement("div");
+                    div_left.setAttribute("class", "node_left");
+                    div_left.innerHTML = commonTime;
+                    var div_right = document.createElement("div");
+                    div_right.setAttribute("class", "div_right");
+                    div_right.innerHTML = intro;
+                    div_node.append(div_left);
+                    div_node.append(div_right);
+                    div_all.append(div_node);
+
+                }
+
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+<div class="div_all">
+
+</div>
+</body>
+</html>

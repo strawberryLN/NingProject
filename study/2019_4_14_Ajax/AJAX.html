@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX</title>
+    <style>
+        .node_class {
+            clear: left;
+        }
+
+        .node_class div {
+            float: left;
+        }
+    </style>
+    <script>
+        /*
+
+        http://www.baidu.com
+
+        name:li
+        age:18
+
+        http://www.baidu.com?name=li&age=18
+
+
+        * */
+        var http;
+        if (window.XMLHttpRequest) {
+            http = new XMLHttpRequest();
+        } else {
+            // IE6, IE5 浏览器执行代码
+            http = new ActiveXObject("Microsoft.XMLHttp");
+        }
+
+        http.open("GET", "news.txt", true);
+        http.send();
+
+        http.onreadystatechange = function () {
+            if (http.readyState == 4 && http.status == 200) {
+                var text = http.responseText;
+                var json = JSON.parse(text);
+                var div_info = document.getElementsByClassName("div_info")[0];
+                for (var i = 0; i < json.length; i++) {
+                    var ob = json[i];//获取到每一个对象
+                    var title = ob.title;
+                    var pic = ob.pic;
+                    var desc = ob.desc;
+                    var divNode = document.createElement("div");
+                    divNode.innerHTML = "<div class='node_class'>" +
+                        "<div><img src='"+pic+"'></div>" +
+                        "<div><h2>"+title+"</h2><p>"+desc+"</p></div>"+
+                    "</div>";
+                    div_info.append(divNode);
+                    // var divNode = document.createElement("div");
+                    // divNode.setAttribute("class", "node_class");
+                    //
+                    // var divNodeLeft = document.createElement("div");
+                    //
+                    // //设置左边的图片
+                    // var divNodeLeftImg = document.createElement("img");
+                    // divNodeLeftImg.setAttribute("src", pic);
+                    // divNodeLeft.appendChild(divNodeLeftImg);
+                    //
+                    // var divNodeRight = document.createElement("div");
+                    //
+                    // var divNodeRightH2 = document.createElement("h2");
+                    // divNodeRightH2.innerText = title;
+                    //
+                    // var divNodeRightP = document.createElement("p");
+                    // divNodeRightP.innerText = desc;
+                    //
+                    // divNodeRight.appendChild(divNodeRightH2);//添加标题
+                    // divNodeRight.appendChild(divNodeRightP);//添加描述
+                    //
+                    //
+                    // divNode.appendChild(divNodeLeft);
+                    // divNode.appendChild(divNodeRight);
+                    //
+                    // div_info.append(divNode);
+
+                }
+
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="div_info">
+
+</div>
+
+</body>
+</html>

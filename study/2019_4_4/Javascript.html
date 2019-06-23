@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+
+    <style>
+        .div_content {
+            width: 200px;
+            height: 300px;
+            border: 1px solid #0053A5;
+            overflow-y: auto;
+            margin-top: 10px;
+
+        }
+    </style>
+
+    <script>
+        /*  a=45;
+            if(a<60){
+                alert("不及格");
+            } else if (60<=a&&a<70){
+                alert("及格");
+            } else if (70<=a&&a<80){
+                alert("一般");
+            } else if(80<=a&&a<90){
+                alert("良好");
+            }else{
+                alert("优秀");
+            }
+
+              var x;
+            alert(x);
+            var b=11,a=10;
+            var x=b%2; (%为除以2后的余数)
+            var y=b%3;
+            if(x==0&&y!=0){
+                alert("该数可以被2整除");
+            }else if(x!=0&&y==0){
+                alert("该数可以被3整除");
+            } else if(x==0&&y==0){
+                alert("该数既能被3整除又能被2整除");
+            }else {
+                alert("该数无法被3和2整除")
+            }
+
+
+             var  baobao=[1,2,3,6,9,0,1,"111",0.6];
+            alert(baobao[0]);
+
+              var arr=new Array();
+
+            arr[0]="wo ai baoabo";
+
+            alert(arr[0]);
+
+
+              var ZhangJiaNing={
+              name:"张佳宁",
+              age:"12",
+              sex:"男"
+          };
+
+          var name=ZhangJiaNing.name;
+          alert(name);
+
+
+
+           var ZhangJiaNing = {
+        name: "张佳宁",
+        sex: "美女",
+        age: "12岁",
+        //获取名字
+        getName: function () {
+            return this.name;
+        },
+        getAge:function(){
+            return this.age;
+        },
+        //设置名字
+        setName: function (name) {
+            this.name = name;
+        },
+        setAge:function (age) {
+            this.age=age;
+        }
+
+    };
+    ZhangJiaNing.setName("李晓明");
+    ZhangJiaNing.setAge("50岁");
+    alert(ZhangJiaNing.name);
+    alert(ZhangJiaNing.getName());
+    alert(ZhangJiaNing.getAge());
+            */
+    </script>
+</head>
+<body>
+
+</body>
+
+<script>
+
+
+    //变大
+    function big() {
+        var node = document.getElementsByClassName("div_content")[0];
+        node.style.fontSize = "20px";
+    }
+
+    //变小
+    function small() {
+        var node = document.getElementsByClassName("div_content")[0];
+        node.style.fontSize = "12px";
+    }
+
+    var isClick = true;
+
+    //变色
+    function changeColor() {
+        var node = document.getElementsByClassName("div_content")[0];
+        if (isClick) {
+            node.style.color = "#d43c3c";
+            isClick=false;
+        } else {
+            node.style.color = "#222222";
+              isClick=true;
+        }
+
+    }
+
+    //变宽
+    function changeWidth() {
+        var node = document.getElementsByClassName("div_content")[0];
+        node.style.width = "600px";
+    }
+</script>
+
+<div>
+    <button onclick="big()">变大</button>
+    <button onclick="small()">变小</button>
+    <button onclick="changeColor()">变色</button>
+    <button onclick="changeWidth()">变宽</button>
+</div>
+<div class="div_content">
+    啊哈哈哈阿娇和大家爱活动就阿訇多煎熬后打开按揭款手机爱咳嗽就爱看啊就是快接啊快睡觉啊奥斯卡健身卡
+    啊哈哈哈阿娇和大家爱活动就阿訇多煎熬后打开按揭款手机爱咳嗽就爱看啊就是快接啊快睡觉啊奥斯卡健身卡
+    啊哈哈哈阿娇和大家爱活动就阿訇多煎熬后打开按揭款手机爱咳嗽就爱看啊就是快接啊快睡觉啊奥斯卡健身卡
+    啊哈哈哈阿娇和大家爱活动就阿訇多煎熬后打开按揭款手机爱咳嗽就爱看啊就是快接啊快睡觉啊奥斯卡健身卡
+</div>
+
+
+</html>

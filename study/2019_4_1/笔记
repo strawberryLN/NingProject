@@ -1,0 +1,37 @@
+1、overflow属性可以控制内容溢出元素框时在对应的元素区间内添加滚动条。
+hidden	内容会被修剪，并且其余内容是不可见的。
+scroll	内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。
+auto	如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容,相比scroll没有竖的滚动条。
+
+2、before 伪元素可以在元素的内容前面插入新内容。
+
+下面的例子在每个 <h1>元素前面插入一幅图片：
+
+实例
+h1:before
+{
+    content:url(smiley.gif);
+}
+
+CSS - :after 伪元素可以在元素的内容之后插入新内容。
+
+下面的例子在每个 <h1> 元素后面插入一幅图片：
+
+实例
+h1:after
+{
+    content:url(smiley.gif);
+}
+
+3、 图像的透明度 - 悬停效果
+透明度
+img
+{
+  opacity:0.4;
+  filter:alpha(opacity=40); /*  IE8 及其更早版本 */
+}
+img:hover
+{
+  opacity:1.0;
+  filter:alpha(opacity=100); /* IE8 及其更早版本 */
+}

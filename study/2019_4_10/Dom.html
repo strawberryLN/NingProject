@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="div_all">
+
+</div>
+
+</body>
+<script>
+    var node = document.getElementsByClassName("div_all")[0];
+
+    for (var i = 0; i < 100; i++) {
+        var pNode = document.createElement("p");
+        pNode.innerText = "我是第"+i+"条";
+
+        node.appendChild(pNode);
+    }
+
+</script>
+</html>

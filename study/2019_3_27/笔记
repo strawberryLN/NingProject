@@ -1,0 +1,60 @@
+文档流实际上是一种民间说法，官方说法是常规流（normal flow）。
+从直观上理解正常流指的是元素按照其在HTML 中的位置顺序决定排布的过程，主要的形式是自上而下，一行接一行，每一行从左至右。
+
+
+1、块状元素和内联元素
+
+块状元素就是自己独占一行  ，具有换行功能
+
+内联元素它不占一行 ，不换行
+
+盒子
+
+<div></div>本身就是一个容器，它是用来存放任何标签的  块状元素
+
+<span></span>是小块状标签，内联元素
+
+
+
+css
+
+
+ width: 100px; 宽
+ height: 100px; 高
+ background-color: blue; 背景色
+ background: url("bg.png");以图片为背景
+ background: url("bg.png") no-repeat; 不重复平铺图片
+
+ background: url("bg.png") repeat-x; x轴重复
+ background: url("bg.png") repeat-y; y轴重复
+
+
+ text-align: center;水平居中
+
+ line-height: 100px;垂直居中
+
+ 外边距：
+ margin-top: 10px;距离上面的边距
+ margin-left: 10px;距离左边的边距
+
+ 内边距：调整内容的边距
+ padding-left: 10px;
+ padding-top: 10px;
+
+
+浮动
+
+  float: left;  左浮动，把盒子2放在盒子1右边
+
+伪类  选择器后面冒号：
+  1、未访问   :link
+  2、已访问   :visited
+  3、鼠标滑过:hover
+  4、已选中:active
+
+ .div2_lin1 div:hover{
+            color: red;
+            cursor: pointer;   （指住变成一只小手）
+            text-decoration: underline; 鼠标滑过加下划线
+        }
+格式化代码：ctrl+alt+l

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var http;
+        if (window.XMLHttpRequest) {
+            http = new XMLHttpRequest();
+        } else {
+            http = new ActiveXObject("Microsoft.XMLHttp");
+        }
+
+        http.open("GET", "xin.txt", true);
+        http.send();
+
+        http.onreadystatechange = function () {
+            if (http.readyState == 4 && http.status == 200) {
+                var text = http.responseText;
+                var json = JSON.parse(text);
+                var res = json.result;
+                var data = res.data;
+                for (var i = 0; i < data.length; i++) {
+                    var intro = data[i].intro;
+                    alert(intro);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

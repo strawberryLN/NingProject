@@ -1,0 +1,53 @@
+如果不能运行，右击文件选择run当前文件，自动在IE浏览器运行，如果不想在IE里运行，可复制链接到其他浏览器。
+
+
+<!--我是注释-->
+
+快捷键  ctrl+/
+
+css
+
+注释
+ /*
+
+        */
+
+1、标签选择器  范围比较大
+
+color: #ff0000;设置颜色，其颜色值可以为英文，也可以为#******
+
+font-size: 26px;设置文字大小
+
+font-weight: bold;文字加粗
+
+font-style: italic;倾斜5
+
+font-family:宋体 ;字体
+
+ p{
+            color: #ff0000;
+  }
+
+
+2、class选择器   类选择器
+<p class="laogong">我爱我老公</p>先在标签里定义一个class，然后在style里输入 . 找到对应的定义名称
+ .laogong{
+            color: red;
+
+        }
+
+ .laopo{
+            color:blue;
+        }
+
+3、id选择器，一般id,唯一的，一般不允许多建
+<h1 id="title">我是大标题</h1>
+
+#title{
+            color: blue;
+        }
+
+4、input文本框内添加提示文字，填写内容时消失：
+用placeholder属性作为提示语
+
+<input placeholder="提示语..."></input>

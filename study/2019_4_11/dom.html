@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+            window.addEventListener("resize", function () {
+            document.getElementById("dem").innerHTML = Math.random();
+        });
+
+        document.getElementById("box").addEventListener("mousemove", myFunction);
+
+        function myFunction() {
+            document.getElementById("a").innerHTML = Math.random();
+        }
+
+        function moveAddlisten() {
+            document.getElementById("box").removeEventListener("mousemove", myFunction)
+        }
+    </script>
+    <style>
+        #box {
+            width: 300px;
+            height: 150px;
+            background-color: pink;
+            text-align: center;
+            padding-top: 110px;
+        }
+
+    </style>
+</head>
+
+<body>
+<p onclick="this.innerText='OFF!'">这是一个段落</p>
+
+<h2 onclick="changeText(this)">我是一行</h2>
+
+<button id="demo">点这里</button>
+<p id="date"></p>
+
+请输入：<input id="change" type="text" onchange="myFunction1()"/>
+
+<div onmousemove="move(this)" onmouseout="out(this)"
+style="width: 100px;height: 100px;background-color: #0053A5;color: white;text-align: center;line-height: 100px">老公
+</div>
+<br/>
+<p>第一行</p>
+<p id="dem"></p>
+<br/><br/>
+
+
+<div id="box">鼠标滑过粉色区域会显示数字<br/>
+    <button onclick="moveAddlisten()">亲我噢！</button>
+</div>
+<p id="a"></p>
+
+<div id="div_all">
+<p id="P1">我是第一行</p>
+<p id="P2" >我是第二行</p>
+</div>
+</body>
+<script>
+    function changeText(h2) {
+        h2.innerHTML = "off!"
+    }
+
+    document.getElementById("demo").onclick = function () {
+        document.getElementById("date").innerHTML = Date();
+    };
+
+    function myFunction1() {
+        var x = document.getElementById("change");
+        x.value = x.value.toUpperCase();
+    }
+
+    function move(a) {
+        a.innerHTML = "mememe"
+    }
+
+    function out(a) {
+        a.innerHTML = "papapa"
+    }
+    document.getElementById("box").addEventListener("mousemove", myFunction);
+
+    function myFunction() {
+        document.getElementById("a").innerHTML = Math.random();
+    }
+
+    function moveAddlisten() {
+        document.getElementById("box").removeEventListener("mousemove", myFunction);
+    }
+
+   var Para=document.createElement("p");
+    var node=document.createTextNode("我是新一行");
+    Para.appendChild(node);
+    var Pnode=document.getElementById("div_all");
+    var child=document.getElementById("P2");
+    Pnode.insertBefore(Para,child);
+
+    child.parentNode.removeChild(child);
+
+
+
+</script>
+</html>

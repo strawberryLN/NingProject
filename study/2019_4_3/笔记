@@ -1,0 +1,43 @@
+1、清除无序列表的缩进
+.list{
+    margin: 0;
+    padding: 0;
+}
+
+CSS 指层叠样式表 (Cascading Style Sheets)
+2、JavaScript 是一种轻量级的编程语言。
+每个载入浏览器的 HTML 文档都会成为 Document 对象。
+
+
+   document.write("<h1>我是标题</h1>");
+   document.write("<h1>我是标题</h1>");
+   document.write("<hr/>");
+   document.write("<a href='http://www.baidu.com'>点击</a>");
+
+
+   获取内容
+     var node=document.getElementById("ids");
+
+     var name=document.getElementById("study").innerText;
+        alert(name);
+
+     更改内容
+  var node = document.getElementById("id_h1").innerText = "333";
+
+   var node = document.getElementById("id_h1");
+   node.innerHTML = "333";
+   getElementById(id是唯一的)
+   node.innerHTML = "<h6>9999</h6>";//innerHTML可以添加标签
+
+   通过class获取
+    var arr = document.getElementsByClassName("id_h1");
+
+    alert(arr[2].innerHTML);
+
+    getElementByClassName(ClassName可重复多个)
+
+
+
+    window.alert("11");
+
+     console.log("----------------------------");//打印数据

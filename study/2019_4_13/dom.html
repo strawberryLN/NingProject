@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="div_all">
+    <p id="p1">我是第一行</p>
+    <p id="p2">我是第二行</p>
+</div>
+</body>
+<script>
+    var parent=document.getElementById("div_all");
+    var child=document.getElementById("p2");
+    var para=document.createElement("p");
+    var newChild=document.createTextNode("我是新一行");
+    para.appendChild(newChild);
+    parent.replaceChild(para,child);
+</script>
+</html>
